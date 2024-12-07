@@ -1,0 +1,48 @@
+.mainCard {
+    width: 50vh;
+    background-color: white;
+    color: black;
+    border-radius: 2vh;
+    margin: 2vh;
+    overflow: hidden; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding-bottom: 1vh;
+}
+
+.ImgOnCard {
+    width: 100%; 
+    height: 25vh;
+    border-top-left-radius: 2vh; 
+    border-top-right-radius: 2vh; 
+    object-fit: cover;
+}
+
+.imgContent {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 1.5vh;
+    overflow: hidden; 
+}
+
+.newsTitle{
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.description{
+    width: 100%;
+    font-size: small;
+}
+
+.imgContent button{
+    width: 40%;
+    border: none;
+    padding: 1vh;
+    background-color: gray;
+    border-radius: 1vh;
+    color: white;
+    font-weight: bold;
+    
+}

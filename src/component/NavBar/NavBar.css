@@ -1,0 +1,48 @@
+.mani-nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.425);
+    padding-left: 8vh;
+    padding-right: 8vh;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+
+.leftnav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightnav input {
+    padding: 1vh;
+    width: 50vh;
+    border: 2px solid transparent; 
+    border-radius: 10px;
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+.rightnav input:focus {
+    border: 2px solid rgba(0, 255, 255, 0.8); 
+}
+.topicSelected{
+    columns: red;
+}
+.rightnav button {
+    margin-left: 1vh;
+    padding: 1.2vh;
+    width: 15vh;
+    border: none;
+    font-weight: bold;
+    cursor: pointer; 
+    border-radius: 10px; 
+    background-color: rgba(0, 255, 255, 0.6); 
+    transition: background-color 0.3s ease; 
+}
+
+.rightnav button:hover {
+    background-color: rgba(0, 255, 255, 0.8); 
+}

@@ -1,0 +1,130 @@
+.Main-Home {
+    background-color: black;
+    min-height: 100vh; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 2vh;
+}
+
+.selected{
+    background-color: white;
+    color: darkviolet;
+}
+
+.headingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3vh; 
+}
+
+.tags-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 1.5vh; 
+}
+
+.tags-section .tag {
+    background-color: purple;
+    color: white;
+    padding: 1vh 2vh; 
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tags-section .tag:hover {
+    background-color: darkviolet;
+    transform: scale(1.05);
+}
+
+.news-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2vh; 
+    width: 100%; 
+    padding: 2vh;
+}
+
+.news-cards p {
+    font-size: 1.2rem;
+    color: lightgray;
+    text-align: center;
+    margin-top: 5vh; 
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    .tags-section .tag {
+        padding: 0.8vh 1.5vh; 
+        font-size: 0.9rem;
+    }
+
+    .news-cards {
+        flex-direction: column;
+        padding: 1vh;
+    }
+
+    .news-cards p {
+        font-size: 1rem;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .tags-section .tag {
+        padding: 0.6vh 1vh; 
+        font-size: 0.8rem;
+    }
+
+    .headingPage h1 {
+        font-size: 1.5rem;
+    }
+
+    .news-cards {
+        gap: 1.5vh;
+    }
+
+    .news-cards p {
+        font-size: 0.9rem;
+        margin-top: 2vh;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: darkviolet;
+  }
+  
+  .pagination button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .pagination .active {
+    background-color: darkviolet;
+  }
+  
